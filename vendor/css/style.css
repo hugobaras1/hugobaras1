@@ -1,0 +1,334 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    /* background-color: #333; */
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.title {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+}
+
+.search_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 3em;
+    border: #333 1px solid;
+    cursor: pointer;
+}
+
+.search_container_responsive {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.first_container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.second_container {
+    display: flex;
+    align-items: center;
+}
+
+
+.search_icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.hyperlinks {
+    display: flex;
+}
+
+.signButton {
+    display: flex;
+    align-items: center;
+}
+
+.signInButton {
+    display: flex;
+    margin: 1em;
+}
+
+.logOut {
+    display: flex;
+    margin: 1em;
+}
+
+.signUpButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.5em;
+    height: 2.5em;
+    background-color: #333;
+    border-radius: 2.5em;
+    color: #fff;
+    margin: 1em 1em 1em 0;
+}
+
+.userButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #333;
+    border-radius: 2.5em;
+    color: #fff;
+    margin: 1em 1em 1em 0;
+}
+
+
+.user_icon {
+    margin: 10%;
+}
+
+.burger {
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.header_link {
+    margin: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+#searchAnimatedDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.5s ease-in-out;
+}
+
+#burgerAnimatedDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.5s ease-in-out;
+}
+
+.back_arrow {
+
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    left: 1em
+}
+
+.cross {
+
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    left: 1em
+}
+
+.search_barre {
+    position: absolute;
+    top: 1em;
+    left: 4.5em;
+    border: #333 1px solid;
+    border-radius: 2.5em;
+    display: flex;
+    align-items: center;
+    width: 19em;
+    height: 2.5em;
+}
+
+.search_barre .search_icon {
+    margin: 1em;
+}
+
+.search_input {
+    width: 16em;
+    border: none;
+}
+
+.down_arrow {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.rotate_arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    display: flex;
+}
+
+.dropdown p img {
+    margin-top: -9px;
+}
+
+.dropdown p {
+    display: flex;
+}
+
+.deroll_menu {
+    width: 100%;
+    height: 30em;
+}
+
+#deroll_menu_etudiant {
+    background-color: #acacac;
+    margin-top: -1%;
+}
+
+#deroll_menu_demande {
+    background-color: #acacac;
+    margin-top: -1%;
+}
+
+#deroll_menu_pourquoi {
+    background-color: #acacac;
+    margin-top: -1%;
+}
+
+.dropdown_responsive {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_responsive p {
+    display: flex;
+    align-items: center;
+}
+
+#deroll_menu_etudiant_responsive {
+    width: 100%;
+    height: 20em;
+    background-color: #acacac;
+}
+
+#deroll_menu_demande_responsive {
+    width: 100%;
+    height: 20em;
+    background-color: #acacac;
+}
+
+#deroll_menu_pourquoi_responsive {
+    width: 100%;
+    height: 20em;
+    background-color: #acacac;
+}
+
+@media (max-width: 840px) {
+
+    header {
+        padding: 10px 0;
+
+    }
+
+    .search_container_responsive {
+        display: flex;
+        position: absolute;
+        right: 1em;
+    }
+
+    .search_container {
+        display: none;
+    }
+
+
+    .search_icon {
+        display: flex;
+    }
+
+    .hyperlinks {
+        display: none;
+    }
+
+    .signInButton {
+        display: flex;
+        position: absolute;
+        right: 4.5em;
+        margin: 0;
+    }
+
+    .signUpButton {
+        display: none;
+
+    }
+
+    .burger {
+        display: flex;
+        margin-left: 1em;
+    }
+
+    .title {
+        font-size: 75%;
+        margin: 0.5em;
+    }
+
+    .first_container {
+        align-items: center;
+    }
+
+    .userButton {
+        display: none;
+    }
+
+    .logOut {
+        display: flex;
+        position: absolute;
+        right: 4.5em;
+        margin: 0;
+    }
+}
